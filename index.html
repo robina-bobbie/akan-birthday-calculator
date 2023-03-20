@@ -16,102 +16,91 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div style="margin: 5px;" class="position-absolute top-80 start-50 translate-middle">
-      <label style="color: dodgerblue;font-size: x-large;">MY AKAN NAME</label>
-    </div>
-  </header><!-- End Header -->
+  <div style="margin: 10px;" class="d-flex justify-content-center">
+    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:#6786D2"><b>MY AKAN
+        NAME</b></h1>
+  </div>
 
-  <main>
+  <div class="d-flex justify-content-center">
+    <div class="row">
+      <!-- left div -->
+      <div class="col-lg-2 order-1">
+      </div>
 
-    <!-- ======= Section ======= -->
-    <section>
+      <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 shadow-lg p-3 mb-5 bg-body rounded">
+        <h2 style="font-size: medium;margin: 10px;">
+          <p>
+            The Akan people of Ghana frequently name their children after the day of the week they were born and the
+            order in which they were born.
+          </p>
+          <p>
+            These "day names" have furthur meanings concerning the soul and character of the person.
+          </p>
+          <p>
+            Middle names have considerably more variety and can refer to their birth order, twin status, or an
+            ancestor's middle name.
+          </p>
+          <p>
+            Most Ghananians have at least one name from this system even if they also have and English or Christian
+            name.
+          </p>
+          <p>
+            Notable figures with day names include Ghana's first president Kwameh Nkurumah and former United Nations
+            Secretary-General Kofi Annan.
+          </p>
+          <p> This application will automatically generate your Akan name based on your day of birth and gender.
+          </p>
+        </h2>
+      </div>
 
-      <div style="padding: 30px;" class="d-flex justify-content-center"><!--class="container"-->
-        <div class="row">
-          <!-- left div -->
-          <div class="col-lg-1 order-1">
-          </div>
+      <div class="col-lg-4 order-3 order-lg-2 shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="d-flex justify-content-center">
+          <form>
+            <h2 style="color:orange"><b>Get Your Akan Name Here</b></h2>
+            <br>
 
-          <div class="col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1">
-            <h2 style="font-size: medium;">
-              <p>
-                The Akan people of Ghana frequently name their children after the day of the week they were born and the
-                order in which they were born.
-              </p>
-              <p>
-                These "day names" have furthur meanings concerning the soul and character of the person.
-              </p>
-              <p>
-                Middle names have considerably more variety and can refer to their birth order, twin status, or an
-                ancestor's middle name.
-              </p>
-              <p>
-                Most Ghananians have at least one name from this system even if they also have and English or Christian
-                name.
-              </p>
-              <p>
-                Notable figures with day names include Ghana's first president Kwameh Nkurumah and former United Nations
-                Secretary-General Kofi Annan.
-              </p>
-              <p> This application will automatically generate your Akan name based on your day of birth and gender.
-              </p>
-            </h2>
-          </div>
-
-          <div class="col-lg-5 order-3 order-lg-2 ">
-            <div class="d-flex justify-content-center">
-              <form>
-                <h2 style="color:orange"><b>Get Your Akan Name Here</b></h2>
-                <br>
-
-                <!-- gender radio buttons -->
-                <div class="mb-3">
-                  <label class="form-label" style="font-weight: bold;">Gender</label>
-                  <div>
-                    <input class="form-check-input" type="radio" name="gender" id="genderMale">
-                    <label class="form-check-label" for="genderMale">
-                      Male
-                    </label>
-                  </div>
-                  <div>
-                    <input class="form-check-input" type="radio" name="gender" id="genderFemale">
-                    <label class="form-check-label" for="genderFemale">
-                      Female
-                    </label>
-                  </div>
-                </div>
-
-                <!-- date picker -->
-                <label for="birthDate" style="font-weight: bold;">Birth Date</label>
-                <input id="birthDate" class="form-control" type="date" />
-                <br>
-
-                <!-- submit button -->
-                <button id="submitBtn" type="button" onclick="submitForm()" name="Submit"
-                  class="btn btn-primary">Submit</button>
-                <br>
-
-                <!-- error message -->
-                <div id="errorMessage" style="color:red;font-weight: bold;" class="form-text"></div>
-                <!-- akan confirmation -->
-                <div id="akanConfirmation" style="color:green;font-weight: bold;" class="form-text"></div>
-
-              </form>
+            <!-- gender radio buttons -->
+            <div class="mb-3">
+              <label class="form-label" style="font-weight: bold;">Gender</label>
+              <div>
+                <input class="form-check-input" type="radio" name="gender" id="genderMale">
+                <label class="form-check-label" for="genderMale">
+                  Male
+                </label>
+              </div>
+              <div>
+                <input class="form-check-input" type="radio" name="gender" id="genderFemale">
+                <label class="form-check-label" for="genderFemale">
+                  Female
+                </label>
+              </div>
             </div>
-          </div>
 
-          <!-- right div -->
-          <div class="col-lg-1 order-4">
+            <!-- date picker -->
+            <label for="birthDate" style="font-weight: bold;">Birth Date</label>
+            <input id="birthDate" class="form-control" type="date" />
+            <br>
 
-          </div>
+            <!-- submit button -->
+            <button id="submitBtn" type="button" onclick="submitForm()" name="Submit"
+              class="btn btn-primary">Submit</button>
+            <br>
+
+            <!-- error message -->
+            <div id="errorMessage" style="color:red;font-weight: bold;" class="form-text"></div>
+            <!-- akan confirmation -->
+            <div id="akanConfirmation" style="color:green;font-weight: bold;" class="form-text"></div>
+
+          </form>
         </div>
       </div>
 
-    </section><!-- End section -->
+      <!-- right div -->
+      <div class="col-lg-2 order-4">
 
-  </main><!-- End #main -->
+      </div>
+    </div>
+  </div>
 
   <!-- JS Files -->
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
