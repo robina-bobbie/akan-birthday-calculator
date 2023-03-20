@@ -1,10 +1,12 @@
 # My Akan Name
 
-This is a learning project by Robina Bosibori as she persues her dreams of becoming a software developer.
-
-This website 
+Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child's name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender.
 
 Author: `Robina Bosibori`
+
+## Access To Website
+
+This website can be accessed at [Robina Bosibori](https://robina-bobbie.github.io/) where it is hosted. The source code can also be found on [GitHub](https://github.com/robina-bobbie/robina-bobbie.github.io)
 
 ## Setup / Usage
 
