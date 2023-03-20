@@ -19,6 +19,18 @@ function submitForm() {
     } else {
         // do not proceed
         proceed = false;
+        // display error message
+        document.getElementById("errorMessage").innerHTML = "Please select Gender to proceed!";
     }
 
+    // should proceed?
+    if (proceed === true) {
+        // check birth date selection
+        if (birthDate === "") {
+            // do not proceed
+            proceed = false;
+        }
+    }
+
+    console.log("Should proceed="+proceed);
 }
