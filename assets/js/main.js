@@ -32,10 +32,22 @@ function submitForm() {
 
     // get Akan name
     akanName = getAkanName(gender, birthDate);
+
+    // print name
+    console.log("akanName="+akanName);
 }
 
 function getAkanName(gender, birthDate) {
+    let femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+    let maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+
     // get day of the week
     let dayOfweek = new Date(birthDate).getDay();
     console.log("dayOfweek:" + dayOfweek)
+
+    if (gender === "male") {
+        return maleNames[dayOfweek];
+    } else if (gender === "female") {
+        return femaleNames[dayOfweek];
+    }
 }
