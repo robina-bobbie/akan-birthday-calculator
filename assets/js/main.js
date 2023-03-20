@@ -11,5 +11,14 @@ function submitForm() {
     // get birth date
     var birthDate = document.getElementById("birthDate").value;
 
-    console.log("birthDate="+birthDate);
+    // check gender selection
+    if (genderMale === true) {
+        gender = "male";
+    } else if (genderFemale === true) {
+        gender = "female";
+    } else {
+        // do not proceed
+        proceed = false;
+    }
+
 }
