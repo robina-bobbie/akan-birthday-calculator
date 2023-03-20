@@ -8,4 +8,8 @@ function submitForm() {
     var genderMale = document.getElementById("genderMale").checked;
     var genderFemale = document.getElementById("genderFemale").checked;
 
+    // get birth date
+    var birthDate = document.getElementById("birthDate").value;
+
+    console.log("birthDate="+birthDate);
 }
