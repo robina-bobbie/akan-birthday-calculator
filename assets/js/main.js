@@ -19,6 +19,8 @@ function submitForm() {
     } else {
         // do not proceed
         proceed = false;
+        // display error message
+        document.getElementById("errorMessage").innerHTML = "Please select Gender to proceed!";
     }
 
     // should proceed?
@@ -27,14 +29,22 @@ function submitForm() {
         if (birthDate === "") {
             // do not proceed
             proceed = false;
+            // display error message
+            document.getElementById("errorMessage").innerHTML = "Please select Birth date to proceed!";
         }
     }
 
-    // get Akan name
-    akanName = getAkanName(gender, birthDate);
+    // should proceed?
+    if (proceed === true) {
+        // get Akan name
+        akanName = getAkanName(gender, birthDate);
 
-    // print name
-    console.log("akanName="+akanName);
+        // check possible error
+        if (akanName === "-1") {
+            // display error message
+            document.getElementById("errorMessage").innerHTML = "Error Getting Akan Name for supplied birth date!";
+        } 
+    }
 }
 
 function getAkanName(gender, birthDate) {
@@ -45,7 +55,9 @@ function getAkanName(gender, birthDate) {
     let dayOfweek = new Date(birthDate).getDay();
     console.log("dayOfweek:" + dayOfweek)
 
-    if (gender === "male") {
+    if (isNaN(dayOfweek)) {
+        return "-1";
+    } else if (gender === "male") {
         return maleNames[dayOfweek];
     } else if (gender === "female") {
         return femaleNames[dayOfweek];
