@@ -1,4 +1,7 @@
 function submitForm() {
+    // clear any error messages
+    document.getElementById("errorMessage").innerHTML = "";
+    
     // variables
     let gender = "";
     let akanName = ";"
