@@ -43,7 +43,10 @@ function submitForm() {
         if (akanName === "-1") {
             // display error message
             document.getElementById("errorMessage").innerHTML = "Error Getting Akan Name for supplied birth date!";
-        } 
+        } else {
+            // display error message
+            document.getElementById("akanConfirmation").innerHTML = "Congratulations, your Akan name is <b>" + akanName + "</b>";
+        }
     }
 }
 
