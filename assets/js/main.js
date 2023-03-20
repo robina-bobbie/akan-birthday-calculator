@@ -49,7 +49,7 @@ function submitForm() {
             document.getElementById("errorMessage").innerHTML = "Error Getting Akan Name for supplied birth date!";
         } else {
             // display error message
-            document.getElementById("akanConfirmation").innerHTML = "Congratulations, your Akan name is <b>" + akanName + "</b>";
+            document.getElementById("akanConfirmation").innerHTML = "<h1>Congratulations!!</h1> Your Akan name is <h2>" + akanName + "</h2>";
         }
     }
 }
