@@ -19,8 +19,6 @@ function submitForm() {
     } else {
         // do not proceed
         proceed = false;
-        // display error message
-        document.getElementById("errorMessage").innerHTML = "Please select Gender to proceed!";
     }
 
     // should proceed?
@@ -32,5 +30,12 @@ function submitForm() {
         }
     }
 
-    console.log("Should proceed="+proceed);
+    // get Akan name
+    akanName = getAkanName(gender, birthDate);
+}
+
+function getAkanName(gender, birthDate) {
+    // get day of the week
+    let dayOfweek = new Date(birthDate).getDay();
+    console.log("dayOfweek:" + dayOfweek)
 }
